@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz2"
+    android:orientation="vertical"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:gravity="center">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz 2"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:src="@drawable/cpu"
+        app:srcCompat="@drawable/cpu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quel est le meilleur processeur actuel : "
+        android:textSize="20sp"
+        android:layout_marginBottom="20sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AMD Ryzen 5 5600X" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Intel Core i9-12900K" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="next"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="302dp"
+        android:layout_height="59dp"
+        app:srcCompat="@drawable/pcg" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+Create an AppMobile :
+       - Phase conception :  -Design - split : demi code demi interface 
+                              layout : qui contient tous les elements suivants :
+                             		-linear layout : les elements sont classés d une maniere lineaire 
+                             		-orientation : vertical / horizontal 
+                             		-imageView : basile pour inserer 
+                             		-EditText : comme input en html 
+                             		-Button 
+                             		-TextView  
+					- <radioGroup> <radioButton> </radioButton> </radioGroup>   
+					- progress bar
+
+les etapes :
+copy/paste les images dans drawble
+importer icons : click droit sur drawable - vector assets puis choisir ......
+dans activity main.xml : supprimer  
+
+-------------------------------------------------------------------------------------------------------------
+activity = java class qui retourne une layout (interface graphique)
+setContentView ( ) : spécifier le layout XML qui définit l'aspect de cette activité 
+controller : 
+		doit avoir 4 etapes :   1- declaration : declarer les objets qu'on va travailler avec dynamiquement
+				        2- recup des IDS 
+					3- association des listenners 
+					4- traitement 
+
+google cloud services = Firebase
+
+SDK : ensemble d'outils, de bibliothèques et de ressources fournis par Google pour permettre aux développeurs de créer des applications Android. 
+

@@ -1,0 +1,1447 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fmodern\fcharset0 Courier-Oblique;\f4\fmodern\fcharset0 Courier;\f5\fmodern\fcharset0 CourierNewPSMT;
+\f6\fnil\fcharset134 PingFangSC-Regular;\f7\fmodern\fcharset0 Courier-Bold;}
+{\colortbl;\red255\green255\blue255;\red12\green101\blue156;\red255\green255\blue255;\red9\green9\blue9;
+\red18\green48\blue202;\red17\green109\blue18;\red0\green29\blue164;\red114\green0\blue130;\red9\green9\blue9;
+\red0\green29\blue164;\red114\green0\blue130;\red18\green48\blue202;\red17\green109\blue18;\red121\green121\blue121;
+\red140\green119\blue13;\red10\green79\blue103;\red18\green51\blue230;}
+{\*\expandedcolortbl;;\cssrgb\c0\c47451\c67451;\cssrgb\c100000\c100000\c100000;\csgenericrgb\c3529\c3529\c3529;
+\csgenericrgb\c7059\c18824\c79216;\csgenericrgb\c6667\c42745\c7059;\csgenericrgb\c0\c11373\c64314;\csgenericrgb\c44706\c0\c50980;\csgenericrgb\c3529\c3529\c3529;
+\csgenericrgb\c0\c11373\c64314;\csgenericrgb\c44706\c0\c50980;\csgenericrgb\c7059\c18824\c79216;\csgenericrgb\c6667\c42745\c7059;\csgenericrgb\c47451\c47451\c47451;
+\csgenericrgb\c54902\c46667\c5098;\csgenericrgb\c3922\c30980\c40392;\csgenericrgb\c7059\c20000\c90196;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25400\viewh13220\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 
+\f1\fs144 Lab 1: QuizApp
+\fs24  
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\sl440\partightenfactor0
+
+\f1\b\fs37\fsmilli18667 \cf2 \cb3 \expnd0\expndtw0\kerning0
+											Copyright: bousmah@gmail.com\
+														Mars 2022\
+
+\f0\b0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b\fs36 \cf0              		Layouts
+\f0\b0\fs24 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf4 <?
+\f4\i0 \cf5 xml version\cf6 ="1.0" \cf5 encoding\cf6 ="utf-8"
+\f3\i \cf4 ?>\
+
+\f4\i0 <\cf7 LinearLayout \cf5 xmlns:\cf8 android\cf6 ="http://schemas.android.com/apk/res/android"\
+    \cf5 xmlns:\cf8 app\cf6 ="http://schemas.android.com/apk/res-auto"\
+    \cf5 xmlns:\cf8 tools\cf6 ="http://schemas.android.com/tools"\
+    \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+    \cf8 android\cf5 :layout_height\cf6 ="match_parent"\
+    \cf8 tools\cf5 :context\cf6 =".MainActivity"\
+    \cf8 android\cf5 :orientation\cf6 ="vertical"\
+    \cf8 android\cf5 :layout_margin\cf6 ="25dp"\
+    \cf4 >\
+\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/logo"\cf4 />\
+    <\cf7 EditText\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/etMail"\
+        \cf8 android\cf5 :hint\cf6 ="email"\
+        \cf8 android\cf5 :drawableLeft\cf6 ="@drawable/ic_baseline_mail_24"\cf4 />\
+    <\cf7 EditText\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/etPassword"\
+        \cf8 android\cf5 :hint\cf6 ="Password"\
+        \cf8 android\cf5 :inputType\cf6 ="textPassword"\
+        \cf8 android\cf5 :drawableLeft\cf6 ="@drawable/ic_baseline_lock_24"\cf4 />\
+    <\cf7 Button\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Sign in"\
+        \cf8 android\cf5 :id\cf6 ="@+id/bLogin"\cf4 />\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="to register click here"\
+        \cf8 android\cf5 :id\cf6 ="@+id/tvRegister"\
+        \cf8 android\cf5 :layout_gravity\cf6 ="center"\
+        \cf8 android\cf5 :textSize\cf6 ="20dp"\cf4 />\
+\
+</\cf7 LinearLayout\cf4 >\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf4 <?
+\f4\i0 \cf5 xml version\cf6 ="1.0" \cf5 encoding\cf6 ="utf-8"
+\f3\i \cf4 ?>\
+
+\f4\i0 <\cf7 LinearLayout \cf5 xmlns:\cf8 android\cf6 ="http://schemas.android.com/apk/res/android"\
+    \cf5 xmlns:\cf8 app\cf6 ="http://schemas.android.com/apk/res-auto"\
+    \cf5 xmlns:\cf8 tools\cf6 ="http://schemas.android.com/tools"\
+    \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+    \cf8 android\cf5 :layout_height\cf6 ="match_parent"\
+    \cf8 tools\cf5 :context\cf6 =".Register"\
+    \cf8 android\cf5 :orientation\cf6 ="vertical"\
+    \cf8 android\cf5 :layout_margin\cf6 ="30dp"\
+    \cf8 android\cf5 :gravity\cf6 ="center"\cf4 >\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/logoo"\cf4 />\
+    <\cf7 EditText\
+        \cf8 android\cf5 :layout_marginTop\cf6 ="30dp"\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/etName"\
+        \cf8 android\cf5 :hint\cf6 ="Name"\
+        \cf8 android\cf5 :drawableLeft\cf6 ="@drawable/ic_baseline_person_24"\
+        \cf4 />\
+    <\cf7 EditText\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/etMail"\
+        \cf8 android\cf5 :hint\cf6 ="Email *"\
+        \cf8 android\cf5 :drawableLeft\cf6 ="@drawable/ic_baseline_mail_24"\cf4 />\
+\
+    <\cf7 EditText\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/etPassword"\
+        \cf8 android\cf5 :hint\cf6 ="Password *"\
+        \cf8 android\cf5 :inputType\cf6 ="textPassword"\
+        \cf8 android\cf5 :drawableLeft\cf6 ="@drawable/ic_baseline_lock_24"\cf4 />\
+    <\cf7 EditText\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/etPassword1"\
+        \cf8 android\cf5 :hint\cf6 ="Confirm password"\
+        \cf8 android\cf5 :inputType\cf6 ="textPassword"\
+        \cf8 android\cf5 :drawableLeft\cf6 ="@drawable/ic_baseline_lock_24"\cf4 />\
+    <\cf7 Button\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Register"\
+        \cf8 android\cf5 :id\cf6 ="@+id/bRegister"\
+        \cf4 />\
+</\cf7 LinearLayout\cf4 >\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf4 <?
+\f4\i0 \cf5 xml version\cf6 ="1.0" \cf5 encoding\cf6 ="utf-8"
+\f3\i \cf4 ?>\
+
+\f4\i0 <\cf7 LinearLayout \cf5 xmlns:\cf8 android\cf6 ="http://schemas.android.com/apk/res/android"\
+    \cf5 xmlns:\cf8 app\cf6 ="http://schemas.android.com/apk/res-auto"\
+    \cf5 xmlns:\cf8 tools\cf6 ="http://schemas.android.com/tools"\
+    \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+    \cf8 android\cf5 :layout_height\cf6 ="match_parent"\
+    \cf8 tools\cf5 :context\cf6 =".Quiz1"\
+    \cf8 android\cf5 :orientation\cf6 ="vertical"\
+    \cf8 android\cf5 :layout_marginLeft\cf6 ="20dp"\
+    \cf8 android\cf5 :layout_marginRight\cf6 ="20dp"\
+    \cf8 android\cf5 :gravity\cf6 ="center"\cf4 >\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Quiz 1"\
+        \cf8 android\cf5 :textSize\cf6 ="25sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\
+        \cf4 />\
+\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/q1"\cf4 />\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="A cette intersection, je laisse la priorit\'e9 \'e0 droite :"\
+        \cf8 android\cf5 :textSize\cf6 ="20sp"\
+        \cf8 android\cf5 :layout_marginBottom\cf6 ="20sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\cf4 />\
+\
+    <\cf7 RadioGroup\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/rg"\cf4 >\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb1"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="Oui" \cf4 />\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb2"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="Non" \cf4 />\
+    </\cf7 RadioGroup\cf4 >\
+    <\cf7 Button\
+        \cf8 android\cf5 :id\cf6 ="@+id/bNext"\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Next"\
+        \cf8 android\cf5 :layout_marginTop\cf6 ="20dp"\cf4 />\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="50dp"\
+        \cf8 android\cf5 :layout_height\cf6 ="80dp"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/logoo"\cf4 />\
+\
+</\cf7 LinearLayout\cf4 >\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf4 <?
+\f4\i0 \cf5 xml version\cf6 ="1.0" \cf5 encoding\cf6 ="utf-8"
+\f3\i \cf4 ?>\
+
+\f4\i0 <\cf7 LinearLayout \cf5 xmlns:\cf8 android\cf6 ="http://schemas.android.com/apk/res/android"\
+    \cf5 xmlns:\cf8 app\cf6 ="http://schemas.android.com/apk/res-auto"\
+    \cf5 xmlns:\cf8 tools\cf6 ="http://schemas.android.com/tools"\
+    \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+    \cf8 android\cf5 :layout_height\cf6 ="match_parent"\
+    \cf8 tools\cf5 :context\cf6 =".Quiz2"\
+    \cf8 android\cf5 :orientation\cf6 ="vertical"\
+    \cf8 android\cf5 :layout_marginLeft\cf6 ="20dp"\
+    \cf8 android\cf5 :layout_marginRight\cf6 ="20dp"\
+    \cf8 android\cf5 :gravity\cf6 ="center"\cf4 >\
+\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Quiz 2"\
+        \cf8 android\cf5 :textSize\cf6 ="25sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\
+        \cf4 />\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/q2"\cf4 />\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Le panneau de danger indique une succession de virages dont le 1er est :"\
+        \cf8 android\cf5 :textSize\cf6 ="20sp"\
+        \cf8 android\cf5 :layout_marginBottom\cf6 ="20sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\cf4 />\
+\
+    <\cf7 RadioGroup\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/rg"\cf4 >\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb1"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="\'c0 droite" \cf4 />\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb2"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="\'c0 gauche" \cf4 />\
+\
+    </\cf7 RadioGroup\cf4 >\
+\
+    <\cf7 Button\
+        \cf8 android\cf5 :id\cf6 ="@+id/bNext"\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Next"\
+        \cf8 android\cf5 :layout_marginTop\cf6 ="20dp"\cf4 />\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="50dp"\
+        \cf8 android\cf5 :layout_height\cf6 ="80dp"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/logoo"\cf4 />\
+\
+</\cf7 LinearLayout\cf4 >\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf4 <?
+\f4\i0 \cf5 xml version\cf6 ="1.0" \cf5 encoding\cf6 ="utf-8"
+\f3\i \cf4 ?>\
+
+\f4\i0 <\cf7 LinearLayout \cf5 xmlns:\cf8 android\cf6 ="http://schemas.android.com/apk/res/android"\
+    \cf5 xmlns:\cf8 app\cf6 ="http://schemas.android.com/apk/res-auto"\
+    \cf5 xmlns:\cf8 tools\cf6 ="http://schemas.android.com/tools"\
+    \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+    \cf8 android\cf5 :layout_height\cf6 ="match_parent"\
+    \cf8 tools\cf5 :context\cf6 =".Quiz3"\
+    \cf8 android\cf5 :orientation\cf6 ="vertical"\
+    \cf8 android\cf5 :layout_marginLeft\cf6 ="20dp"\
+    \cf8 android\cf5 :layout_marginRight\cf6 ="20dp"\
+    \cf8 android\cf5 :gravity\cf6 ="center"\cf4 >\
+\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Quiz 3"\
+        \cf8 android\cf5 :textSize\cf6 ="25sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\
+        \cf4 />\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/q3"\cf4 />\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Avant de partir, je laisse tourner mon moteur pour qu'il monte en temp\'e9rature :"\
+        \cf8 android\cf5 :textSize\cf6 ="20sp"\
+        \cf8 android\cf5 :layout_marginBottom\cf6 ="20sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\cf4 />\
+\
+    <\cf7 RadioGroup\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/rg"\cf4 >\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb1"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="Oui" \cf4 />\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb2"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="Non" \cf4 />\
+\
+    </\cf7 RadioGroup\cf4 >\
+\
+    <\cf7 Button\
+        \cf8 android\cf5 :id\cf6 ="@+id/bNext"\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Next"\
+        \cf8 android\cf5 :layout_marginTop\cf6 ="20dp"\cf4 />\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="50dp"\
+        \cf8 android\cf5 :layout_height\cf6 ="80dp"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/logoo"\cf4 />\
+\
+</\cf7 LinearLayout\cf4 >\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf4 <?
+\f4\i0 \cf5 xml version\cf6 ="1.0" \cf5 encoding\cf6 ="utf-8"
+\f3\i \cf4 ?>\
+
+\f4\i0 <\cf7 LinearLayout \cf5 xmlns:\cf8 android\cf6 ="http://schemas.android.com/apk/res/android"\
+    \cf5 xmlns:\cf8 app\cf6 ="http://schemas.android.com/apk/res-auto"\
+    \cf5 xmlns:\cf8 tools\cf6 ="http://schemas.android.com/tools"\
+    \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+    \cf8 android\cf5 :layout_height\cf6 ="match_parent"\
+    \cf8 tools\cf5 :context\cf6 =".Quiz4"\
+    \cf8 android\cf5 :orientation\cf6 ="vertical"\
+    \cf8 android\cf5 :layout_marginLeft\cf6 ="20dp"\
+    \cf8 android\cf5 :layout_marginRight\cf6 ="20dp"\
+    \cf8 android\cf5 :gravity\cf6 ="center"\cf4 >\
+\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Quiz 4"\
+        \cf8 android\cf5 :textSize\cf6 ="25sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\
+        \cf4 />\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/q4"\cf4 />\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="En tant qu'automobiliste, vous devez \'eatre plus vigilant lorsque :"\
+        \cf8 android\cf5 :textSize\cf6 ="20sp"\
+        \cf8 android\cf5 :layout_marginBottom\cf6 ="20sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\cf4 />\
+\
+    <\cf7 RadioGroup\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/rg"\cf4 >\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb1"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="Le tramway est arr\'eat\'e9" \cf4 />\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb2"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="Le tramway circule" \cf4 />\
+\
+\
+    </\cf7 RadioGroup\cf4 >\
+\
+    <\cf7 Button\
+        \cf8 android\cf5 :id\cf6 ="@+id/bNext"\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Next"\
+        \cf8 android\cf5 :layout_marginTop\cf6 ="20dp"\cf4 />\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="50dp"\
+        \cf8 android\cf5 :layout_height\cf6 ="80dp"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/logoo"\cf4 />\
+\
+\
+</\cf7 LinearLayout\cf4 >\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf4 <?
+\f4\i0 \cf5 xml version\cf6 ="1.0" \cf5 encoding\cf6 ="utf-8"
+\f3\i \cf4 ?>\
+
+\f4\i0 <\cf7 LinearLayout \cf5 xmlns:\cf8 android\cf6 ="http://schemas.android.com/apk/res/android"\
+    \cf5 xmlns:\cf8 app\cf6 ="http://schemas.android.com/apk/res-auto"\
+    \cf5 xmlns:\cf8 tools\cf6 ="http://schemas.android.com/tools"\
+    \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+    \cf8 android\cf5 :layout_height\cf6 ="match_parent"\
+    \cf8 tools\cf5 :context\cf6 =".Quiz5"\
+    \cf8 android\cf5 :orientation\cf6 ="vertical"\
+    \cf8 android\cf5 :layout_marginLeft\cf6 ="20dp"\
+    \cf8 android\cf5 :layout_marginRight\cf6 ="20dp"\
+    \cf8 android\cf5 :gravity\cf6 ="center"\cf4 >\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Quiz 5"\
+        \cf8 android\cf5 :textSize\cf6 ="25sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\
+        \cf4 />\
+\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/q5"\cf4 />\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="En conduisant, je peux utiliser mon portable pour \'e9crire un texto ou composer un num\'e9ro :"\
+        \cf8 android\cf5 :textSize\cf6 ="20sp"\
+        \cf8 android\cf5 :layout_marginBottom\cf6 ="20sp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\cf4 />\
+\
+    <\cf7 RadioGroup\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :id\cf6 ="@+id/rg"\cf4 >\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb1"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="Oui" \cf4 />\
+\
+        <\cf7 RadioButton\
+            \cf8 android\cf5 :id\cf6 ="@+id/rb2"\
+            \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="1"\
+            \cf8 android\cf5 :text\cf6 ="Non" \cf4 />\
+\
+\
+    </\cf7 RadioGroup\cf4 >\
+\
+    <\cf7 Button\
+        \cf8 android\cf5 :id\cf6 ="@+id/bNext"\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Next"\
+        \cf8 android\cf5 :layout_marginTop\cf6 ="20dp"\cf4 />\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="50dp"\
+        \cf8 android\cf5 :layout_height\cf6 ="80dp"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/logoo"\cf4 />\
+\
+\
+</\cf7 LinearLayout\cf4 >\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf4 <?
+\f4\i0 \cf5 xml version\cf6 ="1.0" \cf5 encoding\cf6 ="utf-8"
+\f3\i \cf4 ?>\
+
+\f4\i0 <\cf7 LinearLayout \cf5 xmlns:\cf8 android\cf6 ="http://schemas.android.com/apk/res/android"\
+    \cf5 xmlns:\cf8 app\cf6 ="http://schemas.android.com/apk/res-auto"\
+    \cf5 xmlns:\cf8 tools\cf6 ="http://schemas.android.com/tools"\
+    \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+    \cf8 android\cf5 :layout_height\cf6 ="match_parent"\
+    \cf8 tools\cf5 :context\cf6 =".Score"\
+    \cf8 android\cf5 :orientation\cf6 ="vertical"\
+    \cf8 android\cf5 :layout_margin\cf6 ="25dp"\
+    \cf4 >\
+\
+    <\cf7 ImageView\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :src\cf6 ="@drawable/logoo"\cf4 />\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="Votre score est :"\
+        \cf8 android\cf5 :textSize\cf6 ="25dp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\
+        \cf8 android\cf5 :layout_gravity\cf6 ="center"\
+        \cf4 />\
+    <\cf7 TextView\
+        \cf8 android\cf5 :layout_width\cf6 ="wrap_content"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :text\cf6 ="50%"\
+        \cf8 android\cf5 :textSize\cf6 ="40dp"\
+        \cf8 android\cf5 :textStyle\cf6 ="bold"\
+        \cf8 android\cf5 :textColor\cf6 ="@color/teal_700"\
+        \cf8 android\cf5 :layout_gravity\cf6 ="center"\
+        \cf8 android\cf5 :id\cf6 ="@+id/tvScore"\
+        \cf4 />\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 	<\cf10 ProgressBar\
+    		\cf11 android\cf12 :id\cf13 ="@+id/progressBar"\
+    		\cf12 style\cf13 ="?android:attr/progressBarStyle"\
+    		\cf11 android\cf12 :layout_width\cf13 ="match_parent"\
+    		\cf11 android\cf12 :layout_height\cf13 ="228dp" \cf9 />\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \
+\
+    <\cf7 LinearLayout\
+        \cf8 android\cf5 :layout_width\cf6 ="match_parent"\
+        \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+        \cf8 android\cf5 :orientation\cf6 ="horizontal"\cf4 >\
+        <\cf7 Button\
+            \cf8 android\cf5 :layout_width\cf6 ="0dp"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="2"\
+            \cf8 android\cf5 :text\cf6 ="Logout"\
+            \cf8 android\cf5 :id\cf6 ="@+id/bLogout"\cf4 />\
+        <\cf7 Button\
+            \cf8 android\cf5 :layout_width\cf6 ="0dp"\
+            \cf8 android\cf5 :layout_height\cf6 ="wrap_content"\
+            \cf8 android\cf5 :layout_weight\cf6 ="2"\
+            \cf8 android\cf5 :text\cf6 ="Try again"\
+            \cf8 android\cf5 :id\cf6 ="@+id/bTry"\cf4 />\
+    </\cf7 LinearLayout\cf4 >\
+\
+\
+\
+</\cf7 LinearLayout\cf4 >\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b\fs36 \cf0              		Activities\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf7 package \cf0 com.bousmah.quizapp\cf4 ;\
+\
+\cf7 import \cf0 android.content.Intent\cf4 ;\
+\cf7 import \cf0 android.os.Bundle\cf4 ;\
+\cf7 import \cf0 android.view.View\cf4 ;\
+\cf7 import \cf0 android.widget.Button\cf4 ;\
+\cf7 import \cf0 android.widget.EditText\cf4 ;\
+\cf7 import \cf0 android.widget.TextView\cf4 ;\
+\cf7 import \cf0 android.widget.Toast\cf4 ;\
+\
+\cf7 import \cf0 androidx.appcompat.app.AppCompatActivity\cf4 ;\
+\
+\cf7 public class \cf0 MainActivity \cf7 extends \cf0 AppCompatActivity \cf4 \{\
+    
+\f3\i \cf14 //Step 1: Declaration\
+    
+\f4\i0 \cf0 EditText \cf8 etLogin\cf4 , \cf8 etPassword\cf4 ;\
+    \cf0 Button \cf8 bLogin\cf4 ;\
+    \cf0 TextView \cf8 tvRegister\cf4 ;\
+    \cf15 @Override\
+    \cf7 protected void \cf16 onCreate\cf4 (\cf0 Bundle \cf4 savedInstanceState) \{\
+        \cf7 super\cf4 .onCreate(savedInstanceState);\
+        setContentView(\cf0 R\cf4 .\cf0 layout\cf4 .
+\f3\i \cf8 activity_main
+\f4\i0 \cf4 );\
+        
+\f3\i \cf14 //Step 2: Recuperation des ids\
+        
+\f4\i0 \cf8 etLogin \cf4 = (\cf0 EditText\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 etMail
+\f4\i0 \cf4 );\
+        \cf8 etPassword \cf4 = (\cf0 EditText\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 etPassword
+\f4\i0 \cf4 );\
+        \cf8 bLogin \cf4 = (\cf0 Button\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 bLogin
+\f4\i0 \cf4 );\
+        \cf8 tvRegister \cf4 = (\cf0 TextView\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 tvRegister
+\f4\i0 \cf4 );\
+        
+\f3\i \cf14 //Step 3: Association de listeners\
+        
+\f4\i0 \cf8 bLogin\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 view) \{\
+                
+\f3\i \cf14 //Step 4: Traitement\
+                
+\f4\i0 \cf7 if \cf4 (\cf8 etLogin\cf4 .getText().toString().equals(\cf6 "toto"\cf4 ) && \cf8 etPassword\cf4 .getText().toString().equals(\cf6 "123"\cf4 ))\{\
+                    startActivity(\cf7 new \cf4 Intent(\cf0 MainActivity\cf4 .\cf7 this\cf4 , \cf0 Quiz1\cf4 .\cf7 class\cf4 ));\
+                \}\
+                \cf7 else \cf4 \{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Login or password incorrect !"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                \}\
+            \}\
+        \});\
+        \cf8 tvRegister\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 view) \{\
+                
+\f3\i \cf14 //Step 4: Traitement\
+                
+\f4\i0 \cf4 startActivity(\cf7 new \cf4 Intent(\cf0 MainActivity\cf4 .\cf7 this\cf4 , \cf0 Register\cf4 .\cf7 class\cf4 ));\
+            \}\
+        \});\
+    \}\
+\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf7 package \cf0 com.bousmah.quizapp\cf4 ;\
+\
+\cf7 import \cf0 android.content.Intent\cf4 ;\
+\cf7 import \cf0 android.os.Bundle\cf4 ;\
+\cf7 import \cf0 android.text.TextUtils\cf4 ;\
+\cf7 import \cf0 android.view.View\cf4 ;\
+\cf7 import \cf0 android.widget.Button\cf4 ;\
+\cf7 import \cf0 android.widget.EditText\cf4 ;\
+\cf7 import \cf0 android.widget.Toast\cf4 ;\
+\
+\cf7 import \cf0 androidx.appcompat.app.AppCompatActivity\cf4 ;\
+\
+\cf7 public class \cf0 Register \cf7 extends \cf0 AppCompatActivity \cf4 \{\
+    \cf0 EditText \cf8 etMail\cf4 , \cf8 etPassword\cf4 , \cf8 etPassword1\cf4 ;\
+    \cf0 Button \cf8 bRegister\cf4 ;\
+    \cf15 @Override\
+    \cf7 protected void \cf16 onCreate\cf4 (\cf0 Bundle \cf4 savedInstanceState) \{\
+        \cf7 super\cf4 .onCreate(savedInstanceState);\
+        setContentView(\cf0 R\cf4 .\cf0 layout\cf4 .
+\f3\i \cf8 activity_register
+\f4\i0 \cf4 );\
+        \cf8 etMail\cf4 =(\cf0 EditText\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 etMail
+\f4\i0 \cf4 );\
+        \cf8 etPassword\cf4 =(\cf0 EditText\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 etPassword
+\f4\i0 \cf4 );\
+        \cf8 etPassword1\cf4 =(\cf0 EditText\cf4 )findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 etPassword1
+\f4\i0 \cf4 );\
+        \cf8 bRegister\cf4 =(\cf0 Button\cf4 )findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 bRegister
+\f4\i0 \cf4 );\
+        \cf8 bRegister\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 v) \{\
+                \cf0 String mail\cf4 =\cf8 etMail\cf4 .getText().toString();\
+                \cf0 String password\cf4 =\cf8 etPassword\cf4 .getText().toString();\
+                \cf0 String password1\cf4 =\cf8 etPassword1\cf4 .getText().toString();\
+                \cf7 if\cf4 (\cf0 TextUtils\cf4 .
+\f3\i isEmpty
+\f4\i0 (\cf0 mail\cf4 ))\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Please fill in the required fields"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                    \cf7 return\cf4 ;\
+                \}\
+                \cf7 if\cf4 (\cf0 TextUtils\cf4 .
+\f3\i isEmpty
+\f4\i0 (\cf0 password\cf4 ))\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Please fill in the required fields"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                    \cf7 return\cf4 ;\
+                \}\
+                \cf7 if\cf4 (\cf0 TextUtils\cf4 .
+\f3\i isEmpty
+\f4\i0 (\cf0 password1\cf4 ))\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Please confirm your password"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                    \cf7 return\cf4 ;\
+                \}\
+                \cf7 if\cf4 (\cf0 password\cf4 .length()<\cf17 6\cf4 )\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Password must be at least 6 characters"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                    \cf7 return\cf4 ;\
+                \}\
+                \cf7 if\cf4 (!\cf0 password\cf4 .equals(\cf0 password1\cf4 ))\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Please enter correct password"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                    \cf7 return\cf4 ;\
+                \}\
+\
+                
+\f3\i \cf14 //Commen.login=Mail;\
+                //Commen.password=password;\
+                
+\f4\i0 \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Registration Successful!  inscription r\'e9ussi! 
+\f5 \uc0\u1575 \u1604 \u1578 \u1587 \u1580 \u1610 \u1604 
+\f4  
+\f5 \uc0\u1606 \u1575 \u1580 \u1581 
+\f4 ! 
+\f6 \'d4\'5d\'83\'d4\'b3\'c9\'b9\'a6
+\f4   "\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_LONG
+\f4\i0 \cf4 ).show();\
+                startActivity(\cf7 new \cf4 Intent(\cf0 Register\cf4 .\cf7 this\cf4 ,\cf0 MainActivity\cf4 .\cf7 class\cf4 ));\
+                finish();\
+            \}\
+        \});\
+    \}\
+\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf7 package \cf0 com.bousmah.quizapp\cf4 ;\
+\
+\cf7 import \cf0 androidx.appcompat.app.AppCompatActivity\cf4 ;\
+\
+\cf7 import \cf0 android.content.Intent\cf4 ;\
+\cf7 import \cf0 android.os.Bundle\cf4 ;\
+\cf7 import \cf0 android.view.View\cf4 ;\
+\cf7 import \cf0 android.widget.Button\cf4 ;\
+\cf7 import \cf0 android.widget.RadioButton\cf4 ;\
+\cf7 import \cf0 android.widget.RadioGroup\cf4 ;\
+\cf7 import \cf0 android.widget.Toast\cf4 ;\
+\
+\cf7 public class \cf0 Quiz1 \cf7 extends \cf0 AppCompatActivity \cf4 \{\
+    \cf0 RadioGroup \cf8 rg\cf4 ;\
+    \cf0 RadioButton \cf8 rb\cf4 ;\
+    \cf0 Button \cf8 bNext\cf4 ;\
+    \cf7 int \cf8 score\cf4 =\cf17 0\cf4 ;\
+    \cf0 String \cf8 RepCorrect\cf4 =\cf6 "Non"\cf4 ;\
+    \cf15 @Override\
+    \cf7 protected void \cf16 onCreate\cf4 (\cf0 Bundle \cf4 savedInstanceState) \{\
+        \cf7 super\cf4 .onCreate(savedInstanceState);\
+        setContentView(\cf0 R\cf4 .\cf0 layout\cf4 .
+\f3\i \cf8 activity_quiz1
+\f4\i0 \cf4 );\
+        \cf8 rg\cf4 =(\cf0 RadioGroup\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 rg
+\f4\i0 \cf4 );\
+        \cf8 bNext\cf4 =(\cf0 Button\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 bNext
+\f4\i0 \cf4 );\
+        \cf8 bNext\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 v) \{\
+\
+                \cf7 if\cf4 (\cf8 rg\cf4 .getCheckedRadioButtonId()==-\cf17 1\cf4 )\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Merci de choisir une r\'e9ponse S.V.P !"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                \}\
+                \cf7 else \cf4 \{\
+                    \cf8 rb \cf4 = (\cf0 RadioButton\cf4 ) findViewById(\cf8 rg\cf4 .getCheckedRadioButtonId());\
+                    
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),rb.getText().toString(),Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf7 if\cf4 (\cf8 rb\cf4 .getText().toString().equals(\cf8 RepCorrect\cf4 ))\{\
+                        \cf8 score\cf4 +=\cf17 1\cf4 ;\
+                        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf4 \}\
+                    \cf0 Intent intent\cf4 =\cf7 new \cf4 Intent(\cf0 Quiz1\cf4 .\cf7 this\cf4 ,\cf0 Quiz2\cf4 .\cf7 class\cf4 );\
+                    \cf0 intent\cf4 .putExtra(\cf6 "score"\cf4 ,\cf8 score\cf4 );\
+                    startActivity(\cf0 intent\cf4 );\
+                    
+\f3\i \cf14 //overridePendingTransition(R.anim.fadein,R.anim.fadeout);\
+                    
+\f4\i0 \cf4 overridePendingTransition(\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 exit
+\f4\i0 \cf4 ,\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 entry
+\f4\i0 \cf4 );\
+                    finish();\
+                \}\
+\
+            \}\
+        \});\
+\
+    \}\
+\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf7 package \cf0 com.bousmah.quizapp\cf4 ;\
+\
+\cf7 import \cf0 androidx.appcompat.app.AppCompatActivity\cf4 ;\
+\
+\cf7 import \cf0 android.content.Intent\cf4 ;\
+\cf7 import \cf0 android.os.Bundle\cf4 ;\
+\cf7 import \cf0 android.view.View\cf4 ;\
+\cf7 import \cf0 android.widget.Button\cf4 ;\
+\cf7 import \cf0 android.widget.RadioButton\cf4 ;\
+\cf7 import \cf0 android.widget.RadioGroup\cf4 ;\
+\cf7 import \cf0 android.widget.Toast\cf4 ;\
+\
+\cf7 public class \cf0 Quiz2 \cf7 extends \cf0 AppCompatActivity \cf4 \{\
+    \cf0 RadioGroup \cf8 rg\cf4 ;\
+    \cf0 RadioButton \cf8 rb\cf4 ;\
+    \cf0 Button \cf8 bNext\cf4 ;\
+    \cf7 int \cf8 score\cf4 ;\
+    \cf0 String \cf8 RepCorrect\cf4 =\cf6 "\'c0 droite"\cf4 ;\
+    \cf15 @Override\
+    \cf7 protected void \cf16 onCreate\cf4 (\cf0 Bundle \cf4 savedInstanceState) \{\
+        \cf7 super\cf4 .onCreate(savedInstanceState);\
+        setContentView(\cf0 R\cf4 .\cf0 layout\cf4 .
+\f3\i \cf8 activity_quiz2
+\f4\i0 \cf4 );\
+        \cf8 rg\cf4 =(\cf0 RadioGroup\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 rg
+\f4\i0 \cf4 );\
+        \cf8 bNext\cf4 =(\cf0 Button\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 bNext
+\f4\i0 \cf4 );\
+        \cf0 Intent intent\cf4 =getIntent();\
+        \cf8 score\cf4 =\cf0 intent\cf4 .getIntExtra(\cf6 "score"\cf4 ,\cf17 0\cf4 ) ;\
+        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+        
+\f4\i0 \cf8 bNext\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 v) \{\
+                \cf8 rb\cf4 =(\cf0 RadioButton\cf4 ) findViewById(\cf8 rg\cf4 .getCheckedRadioButtonId());\
+                \cf7 if\cf4 (\cf8 rg\cf4 .getCheckedRadioButtonId()==-\cf17 1\cf4 )\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Merci de choisir une r\'e9ponse S.V.P !"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                \}\
+                \cf7 else \cf4 \{\
+                    
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),rb.getText().toString(),Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf7 if\cf4 (\cf8 rb\cf4 .getText().toString().equals(\cf8 RepCorrect\cf4 ))\{\
+                        \cf8 score\cf4 +=\cf17 1\cf4 ;\
+                        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf4 \}\
+                    \cf0 Intent intent\cf4 =\cf7 new \cf4 Intent(\cf0 Quiz2\cf4 .\cf7 this\cf4 ,\cf0 Quiz3\cf4 .\cf7 class\cf4 );\
+                    \cf0 intent\cf4 .putExtra(\cf6 "score"\cf4 ,\cf8 score\cf4 );\
+                    startActivity(\cf0 intent\cf4 );\
+                    
+\f3\i \cf14 //overridePendingTransition(R.anim.fadein,R.anim.fadeout);\
+                    
+\f4\i0 \cf4 overridePendingTransition(\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 exit
+\f4\i0 \cf4 ,\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 entry
+\f4\i0 \cf4 );\
+                    finish();\
+                \}\
+\
+            \}\
+        \});\
+\
+    \}\
+\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf7 package \cf0 com.bousmah.quizapp\cf4 ;\
+\cf7 import \cf0 androidx.appcompat.app.AppCompatActivity\cf4 ;\
+\
+\cf7 import \cf0 android.content.Intent\cf4 ;\
+\cf7 import \cf0 android.os.Bundle\cf4 ;\
+\cf7 import \cf0 android.view.View\cf4 ;\
+\cf7 import \cf0 android.widget.Button\cf4 ;\
+\cf7 import \cf0 android.widget.RadioButton\cf4 ;\
+\cf7 import \cf0 android.widget.RadioGroup\cf4 ;\
+\cf7 import \cf0 android.widget.Toast\cf4 ;\
+\
+\cf7 public class \cf0 Quiz3 \cf7 extends \cf0 AppCompatActivity \cf4 \{\
+    \cf0 RadioGroup \cf8 rg\cf4 ;\
+    \cf0 RadioButton \cf8 rb\cf4 ;\
+    \cf0 Button \cf8 bNext\cf4 ;\
+    \cf7 int \cf8 score\cf4 ;\
+    \cf0 String \cf8 RepCorrect\cf4 =\cf6 "Non"\cf4 ;\
+    \cf15 @Override\
+    \cf7 protected void \cf16 onCreate\cf4 (\cf0 Bundle \cf4 savedInstanceState) \{\
+        \cf7 super\cf4 .onCreate(savedInstanceState);\
+        setContentView(\cf0 R\cf4 .\cf0 layout\cf4 .
+\f3\i \cf8 activity_quiz3
+\f4\i0 \cf4 );\
+        \cf8 rg\cf4 =(\cf0 RadioGroup\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 rg
+\f4\i0 \cf4 );\
+        \cf8 bNext\cf4 =(\cf0 Button\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 bNext
+\f4\i0 \cf4 );\
+        \cf0 Intent intent\cf4 =getIntent();\
+        \cf8 score\cf4 =\cf0 intent\cf4 .getIntExtra(\cf6 "score"\cf4 ,\cf17 0\cf4 ) ;\
+        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+        
+\f4\i0 \cf8 bNext\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 v) \{\
+                \cf8 rb\cf4 =(\cf0 RadioButton\cf4 ) findViewById(\cf8 rg\cf4 .getCheckedRadioButtonId());\
+                \cf7 if\cf4 (\cf8 rg\cf4 .getCheckedRadioButtonId()==-\cf17 1\cf4 )\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Merci de choisir une r\'e9ponse S.V.P !"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                \}\
+                \cf7 else \cf4 \{\
+                    
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),rb.getText().toString(),Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf7 if\cf4 (\cf8 rb\cf4 .getText().toString().equals(\cf8 RepCorrect\cf4 ))\{\
+                        \cf8 score\cf4 +=\cf17 1\cf4 ;\
+                        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf4 \}\
+                    \cf0 Intent intent\cf4 =\cf7 new \cf4 Intent(\cf0 Quiz3\cf4 .\cf7 this\cf4 ,\cf0 Quiz4\cf4 .\cf7 class\cf4 );\
+                    \cf0 intent\cf4 .putExtra(\cf6 "score"\cf4 ,\cf8 score\cf4 );\
+                    startActivity(\cf0 intent\cf4 );\
+                    
+\f3\i \cf14 //overridePendingTransition(R.anim.fadein,R.anim.fadeout);\
+                    
+\f4\i0 \cf4 overridePendingTransition(\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 exit
+\f4\i0 \cf4 ,\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 entry
+\f4\i0 \cf4 );\
+                    finish();\
+                \}\
+\
+            \}\
+        \});\
+\
+    \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf7 package \cf0 com.bousmah.quizapp\cf4 ;\
+\
+\cf7 import \cf0 androidx.appcompat.app.AppCompatActivity\cf4 ;\
+\
+\cf7 import \cf0 android.content.Intent\cf4 ;\
+\cf7 import \cf0 android.os.Bundle\cf4 ;\
+\cf7 import \cf0 android.view.View\cf4 ;\
+\cf7 import \cf0 android.widget.Button\cf4 ;\
+\cf7 import \cf0 android.widget.RadioButton\cf4 ;\
+\cf7 import \cf0 android.widget.RadioGroup\cf4 ;\
+\cf7 import \cf0 android.widget.Toast\cf4 ;\
+\
+\cf7 public class \cf0 Quiz4 \cf7 extends \cf0 AppCompatActivity \cf4 \{\
+    \cf0 RadioGroup \cf8 rg\cf4 ;\
+    \cf0 RadioButton \cf8 rb\cf4 ;\
+    \cf0 Button \cf8 bNext\cf4 ;\
+    \cf7 int \cf8 score\cf4 ;\
+    \cf0 String \cf8 RepCorrect\cf4 =\cf6 "Le tramway est arr\'eat\'e9"\cf4 ;\
+    \cf15 @Override\
+    \cf7 protected void \cf16 onCreate\cf4 (\cf0 Bundle \cf4 savedInstanceState) \{\
+        \cf7 super\cf4 .onCreate(savedInstanceState);\
+        setContentView(\cf0 R\cf4 .\cf0 layout\cf4 .
+\f3\i \cf8 activity_quiz4
+\f4\i0 \cf4 );\
+        \cf8 rg\cf4 =(\cf0 RadioGroup\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 rg
+\f4\i0 \cf4 );\
+        \cf8 bNext\cf4 =(\cf0 Button\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 bNext
+\f4\i0 \cf4 );\
+        \cf0 Intent intent\cf4 =getIntent();\
+        \cf8 score\cf4 =\cf0 intent\cf4 .getIntExtra(\cf6 "score"\cf4 ,\cf17 0\cf4 ) ;\
+        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+        
+\f4\i0 \cf8 bNext\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 v) \{\
+                \cf8 rb\cf4 =(\cf0 RadioButton\cf4 ) findViewById(\cf8 rg\cf4 .getCheckedRadioButtonId());\
+                \cf7 if\cf4 (\cf8 rg\cf4 .getCheckedRadioButtonId()==-\cf17 1\cf4 )\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Merci de choisir une r\'e9ponse S.V.P !"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                \}\
+                \cf7 else \cf4 \{\
+                    
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),rb.getText().toString(),Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf7 if\cf4 (\cf8 rb\cf4 .getText().toString().equals(\cf8 RepCorrect\cf4 ))\{\
+                        \cf8 score\cf4 +=\cf17 1\cf4 ;\
+                        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf4 \}\
+                    \cf0 Intent intent\cf4 =\cf7 new \cf4 Intent(\cf0 Quiz4\cf4 .\cf7 this\cf4 ,\cf0 Quiz5\cf4 .\cf7 class\cf4 );\
+                    \cf0 intent\cf4 .putExtra(\cf6 "score"\cf4 ,\cf8 score\cf4 );\
+                    startActivity(\cf0 intent\cf4 );\
+                    
+\f3\i \cf14 //overridePendingTransition(R.anim.fadein,R.anim.fadeout);\
+                    
+\f4\i0 \cf4 overridePendingTransition(\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 exit
+\f4\i0 \cf4 ,\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 entry
+\f4\i0 \cf4 );\
+                    finish();\
+                \}\
+\
+            \}\
+        \});\
+\
+    \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf7 package \cf0 com.bousmah.quizapp\cf4 ;\
+\
+\cf7 import \cf0 androidx.appcompat.app.AppCompatActivity\cf4 ;\
+\
+\cf7 import \cf0 android.content.Intent\cf4 ;\
+\cf7 import \cf0 android.os.Bundle\cf4 ;\
+\cf7 import \cf0 android.view.View\cf4 ;\
+\cf7 import \cf0 android.widget.Button\cf4 ;\
+\cf7 import \cf0 android.widget.RadioButton\cf4 ;\
+\cf7 import \cf0 android.widget.RadioGroup\cf4 ;\
+\cf7 import \cf0 android.widget.Toast\cf4 ;\
+\
+\cf7 public class \cf0 Quiz5 \cf7 extends \cf0 AppCompatActivity \cf4 \{\
+    \cf0 RadioGroup \cf8 rg\cf4 ;\
+    \cf0 RadioButton \cf8 rb\cf4 ;\
+    \cf0 Button \cf8 bNext\cf4 ;\
+    \cf7 int \cf8 score\cf4 ;\
+    \cf0 String \cf8 RepCorrect\cf4 =\cf6 "Non"\cf4 ;\
+    \cf15 @Override\
+    \cf7 protected void \cf16 onCreate\cf4 (\cf0 Bundle \cf4 savedInstanceState) \{\
+        \cf7 super\cf4 .onCreate(savedInstanceState);\
+        setContentView(\cf0 R\cf4 .\cf0 layout\cf4 .
+\f3\i \cf8 activity_quiz5
+\f4\i0 \cf4 );\
+        \cf8 rg\cf4 =(\cf0 RadioGroup\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 rg
+\f4\i0 \cf4 );\
+        \cf8 bNext\cf4 =(\cf0 Button\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 bNext
+\f4\i0 \cf4 );\
+        \cf0 Intent intent\cf4 =getIntent();\
+        \cf8 score\cf4 =\cf0 intent\cf4 .getIntExtra(\cf6 "score"\cf4 ,\cf17 0\cf4 ) ;\
+        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+        
+\f4\i0 \cf8 bNext\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 v) \{\
+                \cf8 rb\cf4 =(\cf0 RadioButton\cf4 ) findViewById(\cf8 rg\cf4 .getCheckedRadioButtonId());\
+                \cf7 if\cf4 (\cf8 rg\cf4 .getCheckedRadioButtonId()==-\cf17 1\cf4 )\{\
+                    \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(),\cf6 "Merci de choisir une r\'e9ponse S.V.P !"\cf4 ,\cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                \}\
+                \cf7 else \cf4 \{\
+                    
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),rb.getText().toString(),Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf7 if\cf4 (\cf8 rb\cf4 .getText().toString().equals(\cf8 RepCorrect\cf4 ))\{\
+                        \cf8 score\cf4 +=\cf17 1\cf4 ;\
+                        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+                    
+\f4\i0 \cf4 \}\
+                    \cf0 Intent intent\cf4 =\cf7 new \cf4 Intent(\cf0 Quiz5\cf4 .\cf7 this\cf4 ,\cf0 Score\cf4 .\cf7 class\cf4 );\
+                    \cf0 intent\cf4 .putExtra(\cf6 "score"\cf4 ,\cf8 score\cf4 );\
+                    startActivity(\cf0 intent\cf4 );\
+                    
+\f3\i \cf14 //overridePendingTransition(R.anim.fadein,R.anim.fadeout);\
+                    
+\f4\i0 \cf4 overridePendingTransition(\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 exit
+\f4\i0 \cf4 ,\cf0 R\cf4 .\cf0 anim\cf4 .
+\f3\i \cf8 entry
+\f4\i0 \cf4 );\
+                    finish();\
+                \}\
+\
+            \}\
+        \});\
+\
+    \}\
+\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf7 package \cf0 com.bousmah.quizapp\cf4 ;\
+\
+\cf7 import \cf0 androidx.appcompat.app.AppCompatActivity\cf4 ;\
+\
+\cf7 import \cf0 android.content.Intent\cf4 ;\
+\cf7 import \cf0 android.os.Bundle\cf4 ;\
+\cf7 import \cf0 android.view.View\cf4 ;\
+\cf7 import \cf0 android.widget.Button\cf4 ;\
+\cf7 import \cf0 android.widget.ProgressBar\cf4 ;\
+\cf7 import \cf0 android.widget.TextView\cf4 ;\
+\cf7 import \cf0 android.widget.Toast\cf4 ;\
+\
+\cf7 public class \cf0 Score \cf7 extends \cf0 AppCompatActivity \cf4 \{\
+    \cf0 Button \cf8 bLogout\cf4 , \cf8 bTry\cf4 ;\
+    \cf0 ProgressBar \cf8 progressBar\cf4 ;\
+    \cf0 TextView \cf8 tvScore\cf4 ;\
+    \cf7 int \cf8 score\cf4 ;\
+\
+    \cf15 @Override\
+    \cf7 protected void \cf16 onCreate\cf4 (\cf0 Bundle \cf4 savedInstanceState) \{\
+        \cf7 super\cf4 .onCreate(savedInstanceState);\
+        setContentView(\cf0 R\cf4 .\cf0 layout\cf4 .
+\f3\i \cf8 activity_score
+\f4\i0 \cf4 );\
+        \cf8 tvScore \cf4 =(\cf0 TextView\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 tvScore
+\f4\i0 \cf4 );\
+        \cf8 progressBar\cf4 =(\cf0 ProgressBar\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 progressBar
+\f4\i0 \cf4 );\
+        \cf8 bLogout\cf4 =(\cf0 Button\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 bLogout
+\f4\i0 \cf4 );\
+        \cf8 bTry\cf4 =(\cf0 Button\cf4 ) findViewById(\cf0 R\cf4 .\cf0 id\cf4 .
+\f3\i \cf8 bTry
+\f4\i0 \cf4 );\
+        \cf0 Intent intent\cf4 =getIntent();\
+        \cf8 score\cf4 =\cf0 intent\cf4 .getIntExtra(\cf6 "score"\cf4 ,\cf17 0\cf4 ) ;\
+        \cf8 progressBar\cf4 .setProgress(\cf17 100\cf4 *\cf8 score\cf4 /\cf17 5\cf4 );\
+        \cf8 tvScore\cf4 .setText(\cf17 100\cf4 *\cf8 score\cf4 /\cf17 5\cf4 +\cf6 " %"\cf4 );\
+        
+\f3\i \cf14 //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();\
+        
+\f4\i0 \cf8 bLogout\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 v) \{\
+                \cf0 Toast\cf4 .
+\f3\i makeText
+\f4\i0 (getApplicationContext(), \cf6 "Merci de votre Participation !"\cf4 , \cf0 Toast\cf4 .
+\f3\i \cf8 LENGTH_SHORT
+\f4\i0 \cf4 ).show();\
+                finish();\
+            \}\
+        \});\
+        \cf8 bTry\cf4 .setOnClickListener(\cf7 new \cf0 View\cf4 .\cf0 OnClickListener\cf4 () \{\
+            \cf15 @Override\
+            \cf7 public void \cf16 onClick\cf4 (\cf0 View \cf4 v) \{\
+                startActivity(\cf7 new \cf4 Intent(\cf0 Score\cf4 .\cf7 this\cf4 ,\cf0 Quiz1\cf4 .\cf7 class\cf4 ));\
+            \}\
+        \});\
+\
+    \}\
+\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b\fs36 \cf0 						Config Files\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+						AndroidManifest.xml\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf4 <?
+\f4\i0 \cf5 xml version\cf6 ="1.0" \cf5 encoding\cf6 ="utf-8"
+\f3\i \cf4 ?>\
+
+\f4\i0 <\cf7 manifest \cf5 xmlns:\cf8 android\cf6 ="http://schemas.android.com/apk/res/android"\
+    \cf5 package\cf6 ="com.bousmah.quizapp"\cf4 >\
+\
+    <\cf7 application\
+        \cf8 android\cf5 :allowBackup\cf6 ="true"\
+        \cf8 android\cf5 :icon\cf6 ="@mipmap/ic_launcher"\
+        \cf8 android\cf5 :label\cf6 ="@string/app_name"\
+        \cf8 android\cf5 :roundIcon\cf6 ="@mipmap/ic_launcher_round"\
+        \cf8 android\cf5 :supportsRtl\cf6 ="true"\
+        \cf8 android\cf5 :theme\cf6 ="@style/Theme.QuizApp"\cf4 >\
+        <\cf7 activity\
+            \cf8 android\cf5 :name\cf6 =".Score"\
+            \cf8 android\cf5 :exported\cf6 ="false"\cf4 >\
+        </\cf7 activity\cf4 >\
+        <\cf7 activity\
+            \cf8 android\cf5 :name\cf6 =".Quiz5"\
+            \cf8 android\cf5 :exported\cf6 ="false" \cf4 />\
+        <\cf7 activity\
+            \cf8 android\cf5 :name\cf6 =".Quiz4"\
+            \cf8 android\cf5 :exported\cf6 ="false" \cf4 />\
+        <\cf7 activity\
+            \cf8 android\cf5 :name\cf6 =".Quiz3"\
+            \cf8 android\cf5 :exported\cf6 ="false" \cf4 />\
+        <\cf7 activity\
+            \cf8 android\cf5 :name\cf6 =".Quiz2"\
+            \cf8 android\cf5 :exported\cf6 ="false" \cf4 />\
+        <\cf7 activity\
+            \cf8 android\cf5 :name\cf6 =".Quiz1"\
+            \cf8 android\cf5 :exported\cf6 ="false" \cf4 />\
+        <\cf7 activity\
+            \cf8 android\cf5 :name\cf6 =".Register"\
+            \cf8 android\cf5 :exported\cf6 ="false" \cf4 />\
+        <\cf7 activity\
+            \cf8 android\cf5 :name\cf6 =".MainActivity"\
+            \cf8 android\cf5 :exported\cf6 ="true"\cf4 >\
+            <\cf7 intent-filter\cf4 >\
+                <\cf7 action \cf8 android\cf5 :name\cf6 ="android.intent.action.MAIN" \cf4 />\
+\
+                <\cf7 category \cf8 android\cf5 :name\cf6 ="android.intent.category.LAUNCHER" \cf4 />\
+            </\cf7 intent-filter\cf4 >\
+        </\cf7 activity\cf4 >\
+    </\cf7 application\cf4 >\
+\
+</\cf7 manifest\cf4 >\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+						build.gradle(Project)\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f3\i\fs26 \cf14 // Top-level build file where you can add configuration options common to all sub-projects/modules.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\i0 \cf4 plugins 
+\f7\b \{\
+    
+\f4\b0 id \cf6 'com.android.application' \cf4 version \cf6 '7.1.2' \cf4 apply \cf7 false\
+    \cf4 id \cf6 'com.android.library' \cf4 version \cf6 '7.1.2' \cf4 apply \cf7 false\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f7\b \cf4 \}\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\b0 \cf4 task clean(\cf6 type\cf4 : \cf0 Delete\cf4 ) 
+\f7\b \{\
+    
+\f4\b0 delete rootProject.buildDir\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f7\b \cf4 \}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+						build.gradle(Module)
+\f1 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf4 plugins 
+\f7\b \{\
+    
+\f4\b0 id \cf6 'com.android.application'\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f7\b \cf4 \}\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\b0 \cf4 android 
+\f7\b \{\
+    
+\f4\b0 compileSdk \cf17 31\
+\
+    \cf4 defaultConfig 
+\f7\b \{\
+        
+\f4\b0 applicationId \cf6 "com.bousmah.quizapp"\
+        \cf4 minSdk \cf17 21\
+        \cf4 targetSdk \cf17 31\
+        \cf4 versionCode \cf17 1\
+        \cf4 versionName \cf6 "1.0"\
+\
+        \cf4 testInstrumentationRunner \cf6 "androidx.test.runner.AndroidJUnitRunner"\
+    
+\f7\b \cf4 \}\
+\
+    
+\f4\b0 buildTypes 
+\f7\b \{\
+        
+\f4\b0 release 
+\f7\b \{\
+            
+\f4\b0 minifyEnabled \cf7 false\
+            \cf4 proguardFiles getDefaultProguardFile(\cf6 'proguard-android-optimize.txt'\cf4 ), \cf6 'proguard-rules.pro'\
+        
+\f7\b \cf4 \}\
+    \}\
+    
+\f4\b0 compileOptions 
+\f7\b \{\
+        
+\f4\b0 sourceCompatibility \cf0 JavaVersion\cf4 .
+\f3\i \cf8 VERSION_1_8\
+        
+\f4\i0 \cf4 targetCompatibility \cf0 JavaVersion\cf4 .
+\f3\i \cf8 VERSION_1_8\
+    
+\f7\i0\b \cf4 \}\
+\}\
+\
+
+\f4\b0 dependencies 
+\f7\b \{\
+\
+    
+\f4\b0 implementation \cf6 'androidx.appcompat:appcompat:1.4.1'\
+    \cf4 implementation \cf6 'com.google.android.material:material:1.5.0'\
+    \cf4 implementation \cf6 'androidx.constraintlayout:constraintlayout:2.1.3'\
+    \cf4 testImplementation \cf6 'junit:junit:4.13.2'\
+    \cf4 androidTestImplementation \cf6 'androidx.test.ext:junit:1.1.3'\
+    \cf4 androidTestImplementation \cf6 'androidx.test.espresso:espresso-core:3.4.0'\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f7\b \cf4 \}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs26 \cf4 \
+\
+}
